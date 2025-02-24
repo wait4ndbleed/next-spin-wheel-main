@@ -24,6 +24,8 @@ export default function Spin() {
     setIsSpinning(false);
   };
 
+  const vers = ["Gênesis 1.14","Gênesis 30.35", "Êxodo 8.5", "Êxodo 23.2", "Levítico 7.33", "Levítico 26.46", "Números 1.22", "Números 34.29", "Juízes 16.31", "Neemias 13.31", "Obadias 1.17", "Romanos 11.3", "Lucas 9.56", "Mateus 5.8", "Isaías 49.16"]; 
+  
   const spin = () => {
     if (isSpinning) {
       return;
@@ -37,17 +39,17 @@ export default function Spin() {
     wheelInstance.current = new Winwheel({
       numSegments: 8, // Specify number of segments.
       outerRadius: 212, // Set outer radius so wheel fits inside the background.
-      textFontSize: 28, // Set font size as desired.
+      textFontSize: 23, // Set font size as desired.
       // Define segments including colour and text.
       segments: [
         { fillStyle: "#eae56f", text: "Pecado" },
-        { fillStyle: "#89f26e", text: "Gênesis1.14" },
-        { fillStyle: "#7de6ef", text: "Obadias1.17" },
-        { fillStyle: "#e7706f", text: "Romanos11.3" },
+        { fillStyle: "#89f26e", text:  vers[Math.floor(Math.random() * 15)]},
+        { fillStyle: "#7de6ef", text:  vers[Math.floor(Math.random() * 15)]},
+        { fillStyle: "#e7706f", text:  vers[Math.floor(Math.random() * 15)]},
         { fillStyle: "#eae56f", text: "Pecado" },
-        { fillStyle: "#89f26e", text: "Lucas9.56" },
-        { fillStyle: "#7de6ef", text: "Mateus5.8" },
-        { fillStyle: "#e7706f", text: "Isaías 49.16" },
+        { fillStyle: "#89f26e", text:  vers[Math.floor(Math.random() * 15)]},
+        { fillStyle: "#7de6ef", text:  vers[Math.floor(Math.random() * 15)]},
+        { fillStyle: "#e7706f", text:  vers[Math.floor(Math.random() * 15)]},
       ],
       // Specify the animation to use.
       animation: {

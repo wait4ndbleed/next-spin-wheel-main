@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Spin from "@/components/Spin";
 import { detectModernBrowser } from "@/utils/browser";
 import { headers } from "next/headers";
@@ -15,11 +14,10 @@ export default function Home() {
     >
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <h1 className="text-4xl text-center w-full font-bold xl:mb-12">
-          Spin to win!!!
+          Roleta!!!
         </h1>
         <Spin />
       </main>
-      <Footer />
     </div>
   );
 }
